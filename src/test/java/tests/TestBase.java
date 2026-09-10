@@ -8,7 +8,7 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import pages.AuthorizationTestPage;
+import pages.RegistrationTestPage;
 
 import java.util.Map;
 
@@ -16,7 +16,7 @@ import static com.codeborne.selenide.Selenide.closeWebDriver;
 
 public class TestBase {
 
-    AuthorizationTestPage authorizationTestPage = new AuthorizationTestPage();
+    RegistrationTestPage registrationTestPage = new RegistrationTestPage();
 
     @BeforeEach
     void addListener() {
