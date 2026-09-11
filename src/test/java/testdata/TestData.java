@@ -14,7 +14,8 @@ public class TestData {
     public  String phone = faker.phoneNumber().subscriberNumber(12);
     public  String language = faker.options().option("English", "Русский(Russian)");
     public  String password = faker.internet().password();
-    public  String textSuccessfulAuthorizationForm = "История заказов";
+    public  String textSuccessfulRegistrationForm = "История заказов";
+    public  String textErrorAuthorizationForm = "Поле не заполнено";
 
     private final SelenideElement passwordConfirmationInput = $("#client_password_confirmation");
 

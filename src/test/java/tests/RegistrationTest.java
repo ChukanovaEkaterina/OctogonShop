@@ -13,7 +13,7 @@ public class RegistrationTest extends TestBase {
     @Test
     @DisplayName("Регистрация со всеми заполненными полями валидными данными")
     void successfulAuthorizationTest() {
-        step("Открытие страницы ререгистрации", () -> {
+        step("Открытие страницы регистрации", () -> {
             registrationTestPage
                     .openPage();
         });
@@ -30,8 +30,26 @@ public class RegistrationTest extends TestBase {
         });
         step("Проверка успешной регистрации", () -> {
             registrationTestPage
-                    .chekOrderHistory(testData.textSuccessfulAuthorizationForm)
+                    .chekOrderHistory(testData.textSuccessfulRegistrationForm)
                     .notVisibleRegistrationWindow();
+        });
+    }
+
+    @Test
+    @DisplayName("Отправка пустой формы регистрации")
+    void allInputFieldsEmptyTest() {
+        step("Открытие страницы регистрации", () -> {
+            registrationTestPage
+                    .openPage();
+        });
+        step("Нажать кнопку регистрации", () -> {
+            registrationTestPage
+                    .submit();
+        });
+        step("Проверка ошибки", () -> {
+            registrationTestPage
+                    .visibleRegistrationWindow()
+                    .chekErrorField(testData.textErrorAuthorizationForm);
         });
     }
 }
