@@ -21,6 +21,8 @@ public class RegistrationTestPage {
     private final SelenideElement orderHistoryPage = $(".co-checkout-title");
     private final SelenideElement registrationWindow = $("#new_client");
     private final SelenideElement errorField = $(".co-notice--danger");
+    private final SelenideElement errorMessage = $(".co-notice--danger.co-notice--flash");
+
 
     @Step("Открытие страницы регистрации /client_account/contacts/new")
     public RegistrationTestPage openPage() {
@@ -98,6 +100,24 @@ public class RegistrationTestPage {
     @Step("Вывод ошибки регистрации с текстом \"{value}\"")
     public RegistrationTestPage chekErrorField(String value) {
         errorField.shouldHave(text(value));
+        return this;
+    }
+
+    @Step("Вывод ошибки пустого чекбокса \"{value}\"")
+    public RegistrationTestPage chekErrorCheckbox(String value) {
+        checkboxPersonalData.shouldHave(text(value));
+        return this;
+    }
+
+    @Step("Вывод ошибки короткого пароля \"{value}\"")
+    public RegistrationTestPage chekErrorPasswordLength(String value) {
+        errorMessage.shouldHave(text(value));
+        return this;
+    }
+
+    @Step("Вывод ошибки невалидного Email \"{value}\"")
+    public RegistrationTestPage chekErrorInvalidPassword(String value) {
+        errorMessage.shouldHave(text(value));
         return this;
     }
 }
