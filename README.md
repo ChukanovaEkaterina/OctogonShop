@@ -117,7 +117,7 @@ ___
 <img title="Allure Graphics" src="media/screens/Graphs.png" width="850">  
 </p>
 
-## <img src="media/logo/AllureTestOps.svg" title="Allure TestOps" width="4%"/> Интеграция с Allure TestOps
+## <img src="media/logo/Allure2.svg" title="Allure TestOps" width="4%"/> Интеграция с Allure TestOps
 
 Выполнена интеграция сборки <code>Jenkins</code> с <code>Allure TestOps</code>.
 Результат выполнения автотестов отображается в <code>Allure TestOps</code>
@@ -140,5 +140,5 @@ ___
 
 К каждому тесту в отчете прилагается видео прогона.
 <p align="center">
-  <img title="Selenoid Video" src="media/video/video.gif">
+<img title="Selenoid Video" src="media/video/video.gif" width="550" height="350"  alt="video">   
 </p>
