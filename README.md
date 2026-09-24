@@ -124,28 +124,21 @@ ___
 На Dashboard в <code>Allure TestOps</code> отображена статистика пройденных тестов.
 
 <p align="center">
-<img title="Allure TestOps DashBoard" src="media/screens/allureAutotestCloud.png">
+<img title="Allure TestOps запуски" src="media/screens/TestOps.png">
 </p>
 
-## <img src="media/logo/Jira.svg" title="Jira" width="4%"/> Интеграция с Jira
-
-Реализована интеграция <code>Allure TestOps</code> с <code>Jira</code>, в тикете отображается информация, какие тест-кейсы были написаны в рамках задачи и результат их прогона.
-
-<p align="center">
-<img title="Jira Task" src="media/screens/jiraTask.png">
-</p>
 
 ## <img width="4%" style="vertical-align:middle" title="Telegram" src="media/logo/Telegram.svg"> Уведомления в Telegram с использованием бота
 
 После завершения сборки, бот созданный в <code>Telegram</code>, автоматически обрабатывает и отправляет сообщение с результатом.
 
 <p align="center">
-<img width="70%" title="Telegram Notifications" src="media/screens/notification.png">
+<img width="70%" title="Telegram Notifications" src="media/screens/Telegram.png">
 </p>
 
 ## Видео примера запуска тестов в Selenoid
 
 К каждому тесту в отчете прилагается видео прогона.
 <p align="center">
-  <img title="Selenoid Video" src="media/screens/video.gif">
+  <img title="Selenoid Video" src="media/video/video.gif">
 </p>
